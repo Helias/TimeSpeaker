@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 
-import sys
 import gtk
 import appindicator
-import imaplib
-import re
-
 import os
 import time
 
