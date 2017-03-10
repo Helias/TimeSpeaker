@@ -62,7 +62,7 @@ class Clock:
 	self.ind.set_status(appindicator.STATUS_ACTIVE)
 
     def quit(self, widget):
-        sys.exit(0)
+        exit(0)
 
     def check_time(self):
 	global t
