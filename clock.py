@@ -6,15 +6,17 @@ import os
 import time
 import sys
 
+dir_path = os.path.dirname(os.path.abspath(__file__)) + "/"
+
 t=0
 
 class Clock:
     def __init__(self):
         self.ind = appindicator.Indicator("clock-app",
-                                           "/home/helias/Documenti/Timespeaker/clock.png",
+                                           dir_path + "clock.png",
                                            appindicator.CATEGORY_APPLICATION_STATUS)
         self.ind.set_status(appindicator.STATUS_ACTIVE)
-	self.ind.set_attention_icon("/home/helias/Documenti/Timespeaker/clock_red.png")
+	self.ind.set_attention_icon(dir_path  + "clock_red.png")
         self.menu_setup()
         self.ind.set_menu(self.menu)
 
